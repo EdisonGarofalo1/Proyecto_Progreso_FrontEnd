@@ -1,0 +1,65 @@
+.navbar {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    background-color: #322653;
+    color: white;
+    height: 60px;
+    padding: 0 15px;
+    position: relative; /* Cambiamos a relative para controlar el botón */
+  }
+  
+  .navbar .sidebar-toggle {
+    position: fixed;
+    top: 15px;
+    left: 60px; /* Posición inicial del botón cuando el sidebar está cerrado */
+    background: none;
+    border: none;
+    color: white;
+    font-size: 24px;
+    cursor: pointer;
+    transition: left 0.3s ease; /* Transición suave cuando el botón cambia de posición */
+  }
+  
+  .navbar .profile {
+    display: flex;
+    align-items: center;
+  }
+  
+  .navbar .profile i {
+    margin-right: 10px;
+  }
+  
+  /* Cuando el sidebar está activo, movemos el botón */
+  .sidebar.active ~ .navbar .sidebar-toggle {
+    left: 220px; /* La posición del botón cuando el sidebar está abierto */
+  }
+  
+  
+  /* .navbar {
+      height: 60px;
+      background-color: #3F1E6D;
+      color: white;
+      display: flex;
+      justify-content: space-between;
+      align-items: center;
+      padding: 0 20px;
+    }
+    
+    .navbar button {
+      background: none;
+      border: none;
+      color: white;
+      font-size: 24px;
+      cursor: pointer;
+    }
+    
+    .navbar .profile {
+      display: flex;
+      align-items: center;
+    }
+    
+    .navbar .profile i {
+      margin-right: 10px;
+    }
+     */

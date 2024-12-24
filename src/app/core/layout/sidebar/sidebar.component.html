@@ -1,0 +1,81 @@
+<div class="sidebar" [class.active]="sidebarOpen">
+    <div class="sidebar-header">
+      <!-- Puedes agregar un logo o título aquí si lo deseas -->
+    </div>
+    
+    <!-- Opción: Dashboard -->
+    <a href="#dashboard" class="sidebar-link">
+      <i class="fa fa-tachometer"></i> <!-- Icono para Dashboard -->
+      <span *ngIf="sidebarOpen">Dashboard</span>
+    </a>
+  
+    <!-- Opción: Home -->
+    <a href="#home" class="sidebar-link">
+      <i class="fa fa-home"></i> <!-- Icono para Home -->
+      <span *ngIf="sidebarOpen">Home</span>
+    </a>
+  
+    <!-- Opción: Compras -->
+    <a href="#compras" class="sidebar-link">
+      <i class="fa fa-shopping-cart"></i> <!-- Icono para Compras -->
+      <span *ngIf="sidebarOpen">Compras</span>
+    </a>
+  
+    <!-- Opción: Ventas -->
+    <a href="#ventas" class="sidebar-link">
+      <i class="fa fa-line-chart"></i> <!-- Icono para Ventas -->
+      <span *ngIf="sidebarOpen">Ventas</span>
+    </a>
+  
+    <!-- Opción: Producto -->
+    <a href="#producto" class="sidebar-link">
+      <i class="fa fa-cube"></i> <!-- Icono para Producto -->
+      <span *ngIf="sidebarOpen">Producto</span>
+    </a>
+  
+    <!-- Opción: Categoría -->
+    <a href="/layout/categoria/categorias/listar" class="sidebar-link">
+      <i class="fa fa-tags"></i> <!-- Icono para Categoría -->
+      <span *ngIf="sidebarOpen">Categoría</span>
+    </a>
+  
+    <!-- Opción: Marca -->
+    <a href="#marca" class="sidebar-link">
+      <i class="fa fa-briefcase"></i> <!-- Icono para Marca -->
+      <span *ngIf="sidebarOpen">Marca</span>
+    </a>
+  
+    <!-- Opción: Perfiles -->
+    <a href="#perfiles" class="sidebar-link">
+      <i class="fa fa-id-badge"></i> <!-- Icono para Perfiles -->
+      <span *ngIf="sidebarOpen">Perfiles</span>
+    </a>
+  
+    <!-- Opción: Usuario -->
+    <a href="/auth/auth/list" class="sidebar-link">
+      <i class="fa fa-user"></i> <!-- Icono para Usuario -->
+      <span *ngIf="sidebarOpen">Usuario</span>
+    </a>
+    <!-- Opción: Reportes con submenú -->
+    <div class="sidebar-link" (click)="toggleReportesMenu()" [class.active]="reportesMenuOpen">
+        <i class="fa fa-chart-bar"></i>
+        <span *ngIf="sidebarOpen">Reportes</span>
+        <i class="fa" [class.fa-angle-down]="!reportesMenuOpen" [class.fa-angle-up]="reportesMenuOpen"></i>
+      </div>
+      
+      <div class="submenu" *ngIf="reportesMenuOpen">
+        <a href="#reporteMes" class="sidebar-sublink">
+          <i class="fa fa-calendar"></i>
+          <span *ngIf="sidebarOpen">Reporte del Mes</span>
+        </a>
+        <a href="#ganancias" class="sidebar-sublink">
+          <i class="fa fa-dollar-sign"></i>
+          <span *ngIf="sidebarOpen">Ganancias</span>
+        </a>
+        <a href="#kardex" class="sidebar-sublink">
+          <i class="fa fa-box"></i>
+          <span *ngIf="sidebarOpen">Kardex</span>
+        </a>
+      </div>
+    
+  </div>

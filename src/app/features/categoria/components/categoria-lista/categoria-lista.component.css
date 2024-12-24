@@ -1,0 +1,63 @@
+.tabla-categorias {
+    width: 100%;
+    border-collapse: collapse;
+    margin: 20px 0;
+    font-size: 16px;
+    text-align: left;
+    background-color: #fff;
+    border-radius: 8px;
+    overflow: hidden;
+    box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+  }
+  
+  .tabla-categorias thead {
+    background-color: #4CAF50;
+    color: white;
+  }
+  
+  .tabla-categorias th, .tabla-categorias td {
+    padding: 12px 15px;
+  }
+  
+  .tabla-categorias tbody tr:nth-child(even) {
+    background-color: #f2f2f2;
+  }
+  
+  .tabla-categorias tbody tr:hover {
+    background-color: #f1f1f1;
+    cursor: pointer;
+  }
+  
+  .btn {
+    border: none;
+    padding: 8px 12px;
+    border-radius: 4px;
+    font-size: 14px;
+    cursor: pointer;
+    margin-right: 5px;
+  }
+  
+  .btn-editar {
+    background-color: #4CAF50;
+    color: white;
+  }
+  
+  .btn-editar:hover {
+    background-color: #45a049;
+  }
+  
+  .btn-eliminar {
+    background-color: #f44336;
+    color: white;
+  }
+  
+  .btn-eliminar:hover {
+    background-color: #e53935;
+  }
+  
+  .acciones {
+    display: flex;
+    justify-content: start;
+    gap: 10px;
+  }
+  

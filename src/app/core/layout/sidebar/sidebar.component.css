@@ -1,0 +1,91 @@
+
+.sidebar {
+  height: 100%;
+  background-color: #322653;
+  position: fixed;
+  top: 60px;
+  left: 0;
+  width: 60px; /* Ancho cuando el sidebar está cerrado */
+  transition: width 0.3s ease, border-right 0.3s ease; /* Transición suave */
+  overflow-x: hidden;
+  box-sizing: border-box;
+  border-right: 1px solid #4a4a4a;
+  background-clip: padding-box;
+}
+
+.sidebar.active {
+  width: 220px; /* Ancho cuando el sidebar está abierto */
+}
+
+.sidebar-header {
+  padding: 15px;
+  color: white;
+  font-weight: bold;
+}
+
+.sidebar-link {
+  display: flex;
+  align-items: center;
+  padding: 10px 25px;
+  color: white;
+  font-size: 18px;
+  text-decoration: none;
+  transition: background-color 0.3s;
+  white-space: nowrap;
+}
+
+.sidebar-link:hover {
+  color: #d4d4d4;
+  text-decoration: none;
+  display: flex;
+  align-items: center;
+  padding: 10px;
+  border-radius: 10px;
+  background-color: #4a4a4a;
+}
+
+.sidebar-link i, .sidebar-sublink i {
+  font-size: 20px; /* Tamaño fijo para los iconos */
+  min-width: 30px; /* Espacio reservado para los iconos */
+  margin-right: 10px;
+}
+
+.sidebar:not(.active) .sidebar-link span {
+  display: none; /* Ocultar texto al estar colapsado */
+}
+
+.submenu {
+  padding-left: 20px;
+}
+
+.sidebar-sublink {
+  display: flex;
+  align-items: center;
+  padding: 8px 15px;
+  color: #ccc;
+  font-size: 16px;
+  text-decoration: none;
+  white-space: nowrap;
+}
+
+.sidebar-sublink:hover {
+  background-color: #4a4a4a;
+}
+
+.sidebar-sublink i {
+  margin-right: 15px;
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
+
